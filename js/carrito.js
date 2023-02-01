@@ -30,22 +30,22 @@ function addToCart() {
       div.innerHTML = `
               <img  src="${producto.img}" alt="${producto.title}" />
               <div class="carrito-producto-titulo">
-                <small>Titulo</small>
+                <small>Country</small>
                 <h3>${producto.title}</h3>
               </div>
 
               <div class="carrito-producto-cantidad">
-                <small>Cantidad</small>
+                <small>Quantity</small>
                 <p>${producto.quantity}</p>
               </div>
 
               <div class="carrito-producto-precio">
-                <small>Precio</small>
+                <small>Price</small>
                 <p>${producto.price}</p>
               </div>
 
               <div class="carrito-producto-subtotal">
-                <small>Subtotal</small>
+                <small>Sub-total</small>
                 <p>${producto.price * producto.quantity}</p>
               </div>
 

@@ -100,7 +100,7 @@ function addProducts(productSelect){
         <div class="producto-detalles">
             <h3 class="producto-titulo">${producto.title}</h3>
             <p class="producto-precio">$${producto.price}</p>
-            <button class="producto-agregar" id="${producto.id}">Agregar</button>
+            <button class="producto-agregar" id="${producto.id}">Add to Cart</button>
         </div>
         `;
 
@@ -120,14 +120,14 @@ buttonSelect.forEach(boton => {       /* creamos funcion de categorias de los bo
 
         e.currentTarget.classList.add("active")  
 
-        if(e.currentTarget.id != "todos") {    /* "todos" por el id que dimos en html */
+        if(e.currentTarget.id != "all") {    /* "todos" por el id que dimos en html */
         const productCat = productos.find(producto => producto.cat.id === e.currentTarget.id);
         title.innerText = productCat.cat.name;
         const buttonProduct = productos.filter(producto => producto.cat.id === e.currentTarget.id) ;
         addProducts(buttonProduct);
 
         }else {
-            title.innerText = "All of our Trips and Services"
+            title.innerText = "All our products"
             addProducts(productos);
         }
     })
