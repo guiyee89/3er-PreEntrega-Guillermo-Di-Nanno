@@ -277,20 +277,20 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 950px) {
-  nav {
+@media screen and (max-width: 1190px) {
+  .lista {
     display: block;
     position: relative;
     padding: 15px 20px;
   }
-  nav .menu {
+  .lista .menu {
     margin-top: 15px;
     display: none;
   }
-  nav .menu.active, nav .toggle {
+  .lista .menu.active, .lista .toggle {
     display: block;
   }
-  nav .toggle {
+  .lista .toggle {
     position: absolute;
     top: 15px;
     right: 30px;
@@ -339,9 +339,12 @@ body {
 }
 .grid_container_travel .flex_item_travel .travel_text_buybutton {
   height: 100%;
-  width: 70%;
+  width: 100%;
   justify-content: space-evenly;
   padding: 30px;
+}
+.grid_container_travel .flex_item_travel .travel_text_buybutton .p {
+  margin-bottom: 30px;
 }
 .grid_container_travel .flex_item_travel .travel_text_buybutton h2 {
   margin-bottom: 25px;

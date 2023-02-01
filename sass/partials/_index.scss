@@ -17,6 +17,7 @@ $logo: 200px;
 body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
+    
 }
 
 .t-center{
@@ -40,6 +41,7 @@ body {
     padding: 5px 21px;
     display: flex;
     align-items: center;
+    
 
     a {
         color: #fff;        
@@ -208,10 +210,10 @@ footer{
 
 // ------   TABLET Y MOBILE   ---------
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1190px) {
 
 // HEADER GENERAL
-    nav {
+    .lista {
         display: block;
         position: relative;
         padding: 15px 20px;

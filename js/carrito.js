@@ -11,8 +11,9 @@ const total = document.querySelector("#total")
 const comprar = document.querySelector("#carrito-acciones-comprar")
 
 function cargarCarrito() {
-  
+
   carritoProducto.innerHTML = "";
+  
 
   if (productosEnCarrito && productosEnCarrito.length > 0) {
 
@@ -60,6 +61,7 @@ function cargarCarrito() {
     carritoProducto.classList.add("disabled");
     carritoAcciones.classList.add("disabled");
     carritoComprado.classList.add("disabled");
+    carritoAcciones.innerHTML = "";
   }
 
   actualizarBotonesEliminar();
@@ -112,6 +114,9 @@ function buyProducts() {
     carritoProducto.classList.add("disabled");
     carritoAcciones.classList.add("disabled");
     carritoComprado.classList.remove("disabled");
+
+    carritoProducto.innerHTML = "";
+    carritoAcciones.innerHTML = "";
 }
 
 
