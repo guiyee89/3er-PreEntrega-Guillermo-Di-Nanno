@@ -11,6 +11,9 @@ const total = document.querySelector("#total")
 const comprar = document.querySelector("#carrito-acciones-comprar")
 
 function cargarCarrito() {
+  
+  carritoProducto.innerHTML = "";
+
   if (productosEnCarrito && productosEnCarrito.length > 0) {
 
     carritoVacio.classList.add("disabled");
