@@ -89,6 +89,7 @@ let addButton = document.querySelectorAll(".producto-agregar");
 const cartNumber = document.querySelector("#numerito");
 
 function addProducts(productSelect){
+    
     containerProducts.innerHTML = ""; /* para que se muestre vacio, y luego solo ejecute las categorias en cada boton */
 
     productSelect.forEach(producto => {

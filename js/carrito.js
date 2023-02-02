@@ -30,7 +30,7 @@ function addToCart() {
       div.innerHTML = `
               <img  src="${producto.img}" alt="${producto.title}" />
               <div class="carrito-producto-titulo">
-                <small>Country</small>
+                <small>Item</small>
                 <h3>${producto.title}</h3>
               </div>
 
