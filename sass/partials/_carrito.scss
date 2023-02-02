@@ -176,6 +176,7 @@ a {
           display: flex;
           flex-direction: column;
           gap: 0.25rem;
+          align-items: center;
 
           .producto-titulo {
             font-size: 1.2rem;
@@ -184,25 +185,43 @@ a {
           .producto-precio {
             font-size: 1.1rem;
             text-align: center;
+            padding: .75rem;
           }
-          .producto-agregar {
-            border: 0;
-            background-color: var(--clr-white);
-            color: black;
-            padding: 0.3rem;
-            margin-top: 0.5rem;
-            text-transform: uppercase;
-            font-size: 1rem;
-            border-radius: 2rem;
-            cursor: pointer;
-            border: 3px solid var(--clr-white);
-
-            &:hover {
-              background-color: var(--clr-main);
-              color: white;
-              transition: 0.2s;
-            }
+          button {
+            /* Variables */
+           --button_radius: 3.75em;
+           --button_color: #e8e8e8;
+           --button_outline_color: #000000;
+           font-size: 17px;
+           font-weight: bold;
+           border: none;
+           border-radius: var(--button_radius);
+           background: var(--button_outline_color);
+           width: 80%;
           }
+          
+          .button_top {
+           display: block;
+           box-sizing: border-box;
+           border: 2px solid var(--button_outline_color);
+           border-radius: var(--button_radius);
+           padding: 0.75em 1.5em;
+           background: var(--button_color);
+           color: var(--button_outline_color);
+           transform: translateY(-0.2em);
+           transition: transform 0.1s ease;
+          }
+          
+          button:hover .button_top {
+            /* Pull the button upwards when hovered */
+           transform: translateY(-0.33em);
+          }
+          
+          button:active .button_top {
+            /* Push the button downwards when pressed */
+           transform: translateY(0);
+          }
+          
         }
       }
     }

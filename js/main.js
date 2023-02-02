@@ -17,7 +17,7 @@ function addProducts(productSelect){
         <div class="producto-detalles">
             <h3 class="producto-titulo">${producto.title}</h3>
             <p class="producto-precio">$${producto.price}</p>
-            <button class="producto-agregar" id="${producto.id}">Add to Cart</button>
+            <button class="producto-agregar" id="${producto.id}"><span class="button_top">Add to Cart</span></button>
         </div>
         `;
 
