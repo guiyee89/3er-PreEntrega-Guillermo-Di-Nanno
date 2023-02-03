@@ -729,6 +729,7 @@ a {
   border-radius: var(--button_radius);
   background: var(--button_outline_color);
   width: 80%;
+  cursor: pointer;
 }
 .container-principal main .container-productos .producto .producto-detalles .button_top {
   display: block;
